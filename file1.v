@@ -6,4 +6,5 @@ module D_FF_gate(input D, input clk, output Q, output Qn);
     nand (R, Dn, clk);     // Reset input
     nand (Q, S, Qn);       // Output Q
     nand (Qn, R, Q);       // Output Qn
+end
 endmodule
